@@ -1,0 +1,8 @@
+header {
+  background: #DCDCDC;
+}
+
+ul.breadcrumb li {
+  display: inline;
+  font-size: 12px;
+}
