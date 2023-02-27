@@ -1,12 +1,15 @@
-header {
+header, footer {
     position: fixed;
-    top: 0;
     width: 100%;
+    text-align: center;
+    background-color: white;
+    font-size: 12px;
 }
 
 .testCaseContent {
     max-width: 800px;
     margin: auto;
+    background: #f7edbc
 }
 
 table {
@@ -29,7 +32,6 @@ h2 {
 }
 
 .meta, .testcase {
-    text-align: center;
     border: 1px solid black;
 }
 
@@ -39,10 +41,12 @@ h2 {
 
 .meta th {
     background: #85c3f2;
+    text-align: center;
 }
 
 .meta td {
     background: #b6d8f2;
+    text-align: center;
 }
 
 .testcase th {
@@ -51,4 +55,15 @@ h2 {
 
 .testcase td {
     background: #d8f5d5;
+}
+
+img {
+    width: 150px;
+    cursor:pointer;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+img:focus {
+    width: auto;
 }

@@ -5,20 +5,20 @@
     <title>#WTP-C-E-5: Eeyore donkey's tail</title>
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
-<header>
-    <table class="hTable" width=100%>
-        <tr>
-            <th align="left">
-                Winnie-The-Pooh Test Team
-            </th>
-            <th align="right">
-                <a href="https:\\postoronnim.v">postoronnim.v</a>
-            </th>
-        </tr>
-    </table>
-    <hr>
-</header>
 <body>
+    <header>
+        <table class="hTable" width=100%>
+            <tr>
+                <th align="left">
+                    Winnie-The-Pooh Test Team
+                </th>
+                <th align="right">
+                    <a href="https:\\postoronnim.v">postoronnim.v</a>
+                </th>
+            </tr>
+        </table>
+        <hr>
+    </header>
     <div class="testCaseContent"><br/><br/>
         <ul class="breadcrumb">
             <li><a href="https://postoronnim.v/doc">Test Team Documentation</a></li>
@@ -68,8 +68,9 @@
             </tr>
             <tr class="testcase">
                 <th>1</th>
-                <td colspan="3">Выдти на поляну</td>
-                <td colspan="3" rowspan="3">Хвост присутствует</td>
+                <td colspan="3">Выйти на поляну</td>
+                <td colspan="3" rowspan="3">Хвост присутствует (см. скрин).<br><img src="tail.png" tabindex="1" alt=
+                        "Сова нашла хвост!" title="Сова нашла хвост!" /></td>
             </tr>
             <tr class="testcase">
                 <th>2</th>
@@ -96,6 +97,21 @@
                 <td colspan="3">Нет</td>
                 <td colspan="3">Нет</td>
             </tr>
+            <tr class="space">
+                <td colspan="7">
+                    <div align="right"><br>
+                        <button type="submit" name="submit">Create Task</button>
+                    </div>
+                </td>
+            </tr>
         </table>
+        <br>
     </div>
+    <footer>
+        <hr>
+        <h3>Памятка тестировщика:</h3>
+        <p>● Тесткейс может быть использован в нескольких тестпланах. В случае обнаружения бага нужно указать, какой тестплан исполняется.</p>
+        <p>● В случае, если тестовая поляна недоступна, или недоступен объект тестирования (спит, объелся мёда, неправильные пчёлы, и проч.), кликнуть "Skip" и перейти к следующему тест-кейсу (ссылка "NEXT").</p>
+        <p>● При обнаружении бага СОЗДАТЬ ЗАДАЧУ (кнопка "Create task") и перейти к следующему тест-кейсу.</p>
+    </footer>
 </body>
