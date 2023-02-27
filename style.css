@@ -1,8 +1,54 @@
 header {
-  background: #DCDCDC;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
-ul.breadcrumb li {
-  display: inline;
-  font-size: 12px;
+.testCaseContent {
+    max-width: 800px;
+    margin: auto;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.hTable {
+    width: 95%;
+    margin: auto;
+}
+
+.breadcrumb li {
+    display: inline;
+    font-size: 12px;
+    text-align: right;
+}
+
+h2 {
+    text-align: center;
+}
+
+.meta, .testcase {
+    text-align: center;
+    border: 1px solid black;
+}
+
+.space {
+    border: transparent;
+}
+
+.meta th {
+    background: #85c3f2;
+}
+
+.meta td {
+    background: #b6d8f2;
+}
+
+.testcase th {
+    background: #bcf2b6;
+}
+
+.testcase td {
+    background: #d8f5d5;
 }
