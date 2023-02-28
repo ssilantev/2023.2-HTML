@@ -14,9 +14,6 @@ header, footer {
 
 table {
     border-collapse: collapse;
-}
-
-.hTable {
     width: 95%;
     margin: auto;
 }
@@ -33,6 +30,7 @@ h2 {
 
 .meta, .testcase {
     border: 1px solid black;
+    text-align: center;
 }
 
 .space {
@@ -41,12 +39,10 @@ h2 {
 
 .meta th {
     background: #85c3f2;
-    text-align: center;
 }
 
 .meta td {
     background: #b6d8f2;
-    text-align: center;
 }
 
 .testcase th {
@@ -59,11 +55,70 @@ h2 {
 
 img {
     width: 150px;
-    cursor:pointer;
+    cursor: pointer;
     border: 1px solid black;
     border-radius: 4px;
 }
 
 img:focus {
     width: auto;
+}
+
+.status_radio_btn {
+	display: inline-block;
+	margin-right: 10px;
+}
+.status_radio_btn input[type=radio] {
+	display: none;
+}
+.status_radio_btn label {
+	display: inline-block;
+	cursor: pointer;
+	padding: 0px 10px;
+	line-height: 30px;
+	border: 1px solid #999;
+	border-radius: 15px;
+	user-select: none;
+}
+
+#create {
+	display: inline-block;
+	cursor: pointer;
+	padding: 0px 10px;
+	line-height: 30px;
+	border: 1px solid #999;
+	border-radius: 15px;
+	user-select: none;
+	background: #f7edbc
+}
+
+.status_radio_btn input[id=pass]:checked + label {
+	background: #aaf29b;
+}
+.status_radio_btn input[id=skip]:checked + label {
+	background: #f2f19b;
+}
+.status_radio_btn input[id=fail]:checked + label {
+	background: #ff5e5e;
+}
+
+.status_radio_btn label:hover {
+	color: #666;
+}
+
+#create:disabled{
+    font-weight: bold;
+    color: #666;
+}
+
+#create:enabled{
+    font-weight: bold;
+    color: blue;
+}
+
+#create:hover{
+    font-weight: bold;
+    text-decoration: underline;
+    color: blue;
+
 }

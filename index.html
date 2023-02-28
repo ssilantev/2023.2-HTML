@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>#WTP-C-E-5: Eeyore donkey's tail</title>
+    <title>Хвост ослика Иа-Иа</title>
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <header>
-        <table class="hTable" width=100%>
+        <table>
             <tr>
                 <th align="left">
                     Winnie-The-Pooh Test Team
@@ -26,36 +26,35 @@
             <li>  ● </li><li><a href="https://postoronnim.v/doc/winnie-the-pooh/characters">Characters</a></li>
             <li>  ● </li><li><a href="https://postoronnim.v/doc/winnie-the-pooh/characters/eeyore">Donkey Eeyore</a></li>
             <li>  ● </li><li><a href="https://postoronnim.v/doc/winnie-the-pooh/characters/eeyore/smoke">Smoke</a></li>
-            <li>  ● </li><li>#WTP-C-E-5: Eeyore Donkey's Tail</li>
+            <li>  ● </li><li>#WTP-C-E-5 Eeyore Donkey's Tail</li>
         </ul>
-
         <table width=100%>
             <tr>
                 <th><h3>< <a href="https://postoronnim.v/doc/winnie-the-pooh/characters/eeyore/smoke/WTP-C-E-4">PREV</a></h3></th>
-                <th><h2>#WTP-C-E-5: "Хвост ослика Иа-Иа"</h2></th>
+                <th><h2>#WTP-C-E-5 "Хвост ослика Иа-Иа"</h2></th>
                 <th><h3><a href="https://postoronnim.v/doc/winnie-the-pooh/characters/eeyore/smoke/WTP-C-E-6">NEXT</a> ></h3></th>
             </tr>
-        </table> <br>
-        <table class="hTable" border="1" width=100%>
+        </table>
+        <table border="1">
             <tr class="meta">
-                <th rowspan="2" colspan="2">Тест-кейс:</th>
+                <th rowspan="2" colspan="2">Тест-кейс</th>
                 <td rowspan="2">WTP-C-E-5</td>
-                <th>Исправил:</th>
+                <th>Исправил</th>
                 <td>Кролик</td>
-                <th>Дата:</th>
+                <th>Дата</th>
                 <td>05.07.1972</td>
             </tr>
             <tr class="meta">
-                <th>Приоритет:</th>
+                <th>Приоритет</th>
                 <td>Highest</td>
-                <th>Требования:</th>
+                <th>Требования</th>
                 <td><a href="https://postoronnim.v/doc/winnie-the-pooh/3rd">Сценарий серии "Винни-Пух и день забот"</a></td>
             </tr>
             <tr class="space">
                 <td colspan="7"></td>
             </tr>
             <tr class="meta">
-                <th colspan="2">Предусловия:</th>
+                <th colspan="2">Предусловия</th>
                 <td colspan="5">1. Тестировать в день рождения Иа-Иа;<br>2. Иа-Иа приведен в грустное состояние.</td>
             </tr>
             <tr class="space">
@@ -84,7 +83,7 @@
                 <td colspan="7"></td>
             </tr>
             <tr class="meta">
-                <th>Теги:</th>
+                <th>Теги</th>
                 <th colspan="3">Автоматизировано:</th>
                 <th colspan="3">Замечания:</th>
             </tr>
@@ -97,21 +96,57 @@
                 <td colspan="3">Нет</td>
                 <td colspan="3">Нет</td>
             </tr>
-            <tr class="space">
-                <td colspan="7">
-                    <div align="right"><br>
-                        <button type="submit" name="submit">Create Task</button>
-                    </div>
-                </td>
-            </tr>
-        </table>
+        </table><br>
+        <form action="form.html" target="_blank">
+            <table>
+                <tr>
+                    <th>
+                        <div class="status_radio_btn">
+                            <input type="radio" id="pass" name="status" onchange="enableButton()" value="1">
+                            <label for="pass">Passed</label>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="status_radio_btn">
+                            <input type="radio" id="skip" name="status" onchange="enableButton()" value="2">
+                            <label for="skip">Skipped or Blocked</label>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="status_radio_btn">
+                            <input type="radio" id="fail" name="status" onchange="enableButton()" value="3" required>
+                            <label for="fail">Failed</label>
+                        </div>
+                    </th>
+                </tr>
+                <tr>
+                    <td colspan="7"><br></td>
+                </tr>
+                <tr>
+                    <td colspan="2"></td>
+                    <th>
+                        <div class="create_task_btn">
+                            <button type="submit" id="create" value="New Task" disabled>New Task</button>
+                            <script>
+                                function enableButton(){
+                                  var submitButton = document.querySelector('button[type="submit"]');
+                                  var selectedRadioButton = document.querySelector('input[name="status"]:checked');
+                                  submitButton.disabled = selectedRadioButton.value != '3';
+                                }
+                                enableButton();
+                            </script>
+                        </div>
+                    </th>
+                </tr>
+            </table>
+        </form>
         <br>
     </div>
     <footer>
         <hr>
         <h3>Памятка тестировщика:</h3>
-        <p>● Тесткейс может быть использован в нескольких тестпланах. В случае обнаружения бага нужно указать, какой тестплан исполняется.</p>
-        <p>● В случае, если тестовая поляна недоступна, или недоступен объект тестирования (спит, объелся мёда, неправильные пчёлы, и проч.), кликнуть "Skip" и перейти к следующему тест-кейсу (ссылка "NEXT").</p>
-        <p>● При обнаружении бага СОЗДАТЬ ЗАДАЧУ (кнопка "Create task") и перейти к следующему тест-кейсу.</p>
+        <p>● Если тест пройден, кликнуть "Passed" и перейти к следующему тест-кейсу (ссылка "NEXT").</p>
+        <p>● Если тестовая поляна недоступна, или недоступен объект тестирования (спит, объелся мёдом, неправильные пчёлы, и проч.), кликнуть "Skipped or Blocked" и перейти к следующему тест-кейсу (ссылка "NEXT").</p>
+        <p>● При обнаружении бага СОЗДАТЬ ЗАДАЧУ: выбрать "Failed", затем перейти к заданию задачи в новом окне (кнопка "New task"), а окне тест-кейса перейти к следующему.</p>
     </footer>
 </body>
