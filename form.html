@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Новая Задача</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="owl.png" href="owl.png" />
+</head>
+<body>
+    <header>
+        <table>
+            <tr>
+                <th align="left">
+                    Winnie-The-Pooh Test Team
+                </th>
+                <th align="right">
+                    <a href="https:\\postoronnim.v">postoronnim.v</a>
+                </th>
+            </tr>
+        </table>
+        <hr>
+    </header>
+    <div class="Content"><br/><br/>
+        <ul class="breadcrumb">
+            <li>  ● </li><li><a href="index.html"><<< Вернуться к Тест-кейсу</a></li>
+            <li>  ● </li><li>Новая Задача</li>
+        </ul>
+        <table>
+            <tr>
+                <td width="61px"><img class="imgLogo" src="owl.png" alt="logo" /></td>
+                <td width="200px"><h2>OWL Bug Tracker</h2></td>
+                <td><h2>Новая Задача</h2></td>
+            </tr>
+        </table>
+        <br>
+        <form>
+            <table border="2">
+                <tr>
+                    <th>
+                        <p>Трекер*</p>
+                    </th>
+                    <td colspan="5">
+                        <input type="radio" id="bug" name="taskType" value="1" required>
+                        <label for="bug">Баг</label>
+                        <input type="radio" id="feature" name="taskType" value="2" required>
+                        <label for="feature">Фича</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <p>Название*</p>
+                    </th>
+                    <td colspan="5">
+                        <input id="taskName" name="taskName" autofocus required maxlength="200" placeholder="Не пройден #WTP-C-E-5 Eeyore Donkey's Tail..."/>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <p>Описание*</p>
+                    </th>
+                    <td colspan="5">
+                        <textarea id="description" name="description" required maxlength="3000" placeholder="Шаги воспроизведения, Ожидаемый и Фактический рещультат..."></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <p>Приоритет*</p>
+                    </th>
+                    <td colspan="5">
+                        <select name="assigned" required>
+                            <option value="1">Lowest</option>
+                            <option value="2">Low</option>
+                            <option value="3" selected>Normal</option>
+                            <option value="4">High</option>
+                            <option value="5">Highest</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <p>Назначено*</p>
+                    </th>
+                    <td>
+                        <select name="assigned" required>
+                            <option value="">Выбрать...</option>
+                            <option value="owl">Сова</option>
+                            <option value="Pooh">Винни Пух</option>
+                            <option value="pig">Пятачок</option>
+                            <option value="rabbit">Кролик</option>
+                            <option value="donkey">Иа-Иа</option>
+                        </select>
+                    </td>
+                    <th>
+                        <p>Наблюдатели</p>
+                    </th>
+                    <td>
+                        <label>
+                            <input type="checkbox" name="owl" value="true">Сова<br/>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="Pooh" value="true">Винни Пух<br/>
+                        </label>
+                    </td>
+                    <td>
+                        <label>
+                            <input type="checkbox" name="pig" value="true">Пятачок<br/>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="rabbit" value="true">Кролик<br/>
+                        </label>
+                    </td>
+                    <td>
+                        <label>
+                            <input type="checkbox" name="donkey" value="true">Иа-Иа<br/>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="bee" value="true">Пчёлы<br/>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+
+                </tr>
+                <tr>
+
+                </tr>
+            </table>
+        </form>
+        <br>
+        <br>
+            <table border="1">
+
+                <tr class="meta">
+                    <th>Приоритет</th>
+                    <td>Highest</td>
+                    <th>Требования</th>
+                    <td><a href="https://postoronnim.v/doc/winnie-the-pooh/3rd">Сценарий серии "Винни-Пух и день забот"</a></td>
+                </tr>
+                <tr class="space">
+                    <td colspan="7"></td>
+                </tr>
+                <tr class="meta">
+                    <th colspan="2">Предусловия</th>
+                    <td colspan="5">1. Тестировать в день рождения Иа-Иа;<br>2. Иа-Иа приведен в грустное состояние.</td>
+                </tr>
+                <tr class="space">
+                    <td colspan="7"></td>
+                </tr>
+                <tr class="testcase">
+                    <th>Шаг #</th>
+                    <th colspan="3">Описание шага</th>
+                    <th colspan="3">Ожидаемый результат</th>
+                </tr>
+                <tr class="testcase">
+                    <th>1</th>
+                    <td colspan="3">Выйти на поляну</td>
+                    <td colspan="3" rowspan="3">Хвост присутствует (см. скрин).<br></td>
+                </tr>
+                <tr class="testcase">
+                    <th>2</th>
+                    <td colspan="3">Поздороваться с Иа-Иа</td>
+                </tr>
+                <tr class="testcase">
+                    <th>3</th>
+                    <td colspan="3">Осмотреть хвост</td>
+                </tr>
+                <tr class="space">
+                    <td colspan="7"></td>
+                </tr>
+                <tr class="meta">
+                    <th>Теги</th>
+                    <th colspan="3">Автоматизировано:</th>
+                    <th colspan="3">Замечания:</th>
+                </tr>
+                <tr class="meta">
+                    <td>
+                        <a href="#smoke">#smoke</a><br>
+                        <a href="#function">#function</a><br>
+                        <a href="#gui">#gui</a>
+                    </td>
+                    <td colspan="3">Нет</td>
+                    <td colspan="3">Нет</td>
+                </tr>
+            </table>
+            <br>
+
+        <br>
+    </div>
+<footer>
+    <hr>
+    <h3>Памятка тестировщика:</h3>
+    <p>● Если тест пройден, кликнуть "Passed" и перейти к следующему тест-кейсу (ссылка "NEXT").</p>
+    <p>● Если тестовая поляна недоступна, или недоступен объект тестирования (спит, объелся мёдом, неправильные пчёлы, и проч.), кликнуть "Skipped or Blocked" и перейти к следующему тест-кейсу (ссылка "NEXT").</p>
+    <p>● При обнаружении бага СОЗДАТЬ ЗАДАЧУ: выбрать "Failed", затем перейти к заданию задачи в новом окне (кнопка "New task"), а окне тест-кейса перейти к следующему.</p>
+</footer>
+</body>

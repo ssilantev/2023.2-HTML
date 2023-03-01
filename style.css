@@ -6,10 +6,10 @@ header, footer {
     font-size: 12px;
 }
 
-.testCaseContent {
+.Content {
     max-width: 800px;
     margin: auto;
-    background: #f7edbc
+    background: #f7edbc;
 }
 
 table {
@@ -54,10 +54,18 @@ h2 {
 }
 
 img {
+    border: 1px solid black;
+}
+
+.imgSample {
     width: 150px;
     cursor: pointer;
-    border: 1px solid black;
     border-radius: 4px;
+}
+
+.imgLogo {
+    width: 60px;
+    border-radius: 30px;
 }
 
 img:focus {
@@ -106,19 +114,28 @@ img:focus {
 	color: #666;
 }
 
-#create:disabled{
+#create {
     font-weight: bold;
-    color: #666;
+}
+
+#create:disabled:hover{
+    text-decoration: underline;
 }
 
 #create:enabled{
-    font-weight: bold;
     color: blue;
 }
 
-#create:hover{
-    font-weight: bold;
+#create:enabled:hover {
     text-decoration: underline;
-    color: blue;
+}
 
+#taskName {
+    width: 90%;
+}
+
+textarea {
+    width: 650px;
+    height: 200px;
+    resize: vertical;
 }
