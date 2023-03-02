@@ -17,6 +17,9 @@ table {
     width: 95%;
     margin: auto;
 }
+table.title {
+    width: auto;
+}
 
 .breadcrumb li {
     display: inline;
@@ -53,6 +56,26 @@ h2 {
     background: #d8f5d5;
 }
 
+.space {
+    border: transparent;
+}
+
+.row_a th {
+    background: #9c9c9c;
+}
+
+.row_a td {
+    background: #adadad;
+}
+
+.row_b th {
+    background: #cccccc;
+}
+
+.row_b td {
+    background: #ebebeb;
+}
+
 img {
     border: 1px solid black;
 }
@@ -76,9 +99,11 @@ img:focus {
 	display: inline-block;
 	margin-right: 10px;
 }
+
 .status_radio_btn input[type=radio] {
 	display: none;
 }
+
 .status_radio_btn label {
 	display: inline-block;
 	cursor: pointer;
@@ -114,7 +139,7 @@ img:focus {
 	color: #666;
 }
 
-#create {
+button {
     font-weight: bold;
 }
 
@@ -131,11 +156,37 @@ img:focus {
 }
 
 #taskName {
-    width: 90%;
+    width: 580px;
 }
 
 textarea {
-    width: 650px;
+    width: 580px;
     height: 200px;
     resize: vertical;
+}
+
+.bold {
+     font-weight: bold;
+}
+
+select {
+    overflow: hidden;
+}
+
+#reset {
+    background: #ff5e5e;
+	padding: 0px 10px;
+    line-height: 30px;
+	border: 1px solid #999;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+#submit {
+    background: #aaf29b;
+	padding: 0px 10px;
+    line-height: 30px;
+ 	border: 1px solid #999;
+    cursor: pointer;
+    border-radius: 15px;
 }
